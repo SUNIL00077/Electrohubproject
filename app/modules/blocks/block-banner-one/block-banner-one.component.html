@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row text-center">
+        <div class="card" *ngFor="let data of allCardData">
+            <div class="card-header">
+                <h1>
+                   {{data.image_name}}
+                </h1>
+            </div>
+            <div class="card-body">
+                <p>
+                    <img src="{{data.image_url}}" alt="">
+                </p>
+                <small>{{data.image_info}}</small><br>
+                <button class="btn btn-success btn-lg" (click)="goToLogin()">Go somewhere</button>
+            </div>
+        </div>
+    </div>
+</div>
